@@ -12,21 +12,12 @@ import { filterBadWords } from "./filterBadWords";
 import { FaGoogle, FaSignOutAlt, FaPaperPlane } from "react-icons/fa";
 
 const firebaseConfig = {
-  apiKey:
-    process.env.REACT_APP_FIREBASE_API_KEY ||
-    "AIzaSyBq0XIwWv8JwYBmz3UKZuUJ2sS71CKM2r0",
-  authDomain:
-    process.env.REACT_APP_FIREBASE_AUTH_DOMAIN ||
-    "message-7783a.firebaseapp.com",
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "message-7783a",
-  storageBucket:
-    process.env.REACT_APP_FIREBASE_STORAGE_BUCKET ||
-    "message-7783a.appspot.com",
-  messagingSenderId:
-    process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "296643148399",
-  appId:
-    process.env.REACT_APP_FIREBASE_APP_ID ||
-    "1:296643148399:web:e3222baed0ea3c5900eb9a",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 if (!process.env.REACT_APP_FIREBASE_API_KEY) {
